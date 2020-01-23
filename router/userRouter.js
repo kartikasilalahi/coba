@@ -4,7 +4,7 @@ const {userController} = require('../controller')
 const router=express.Router()
 
 router.get('/users', userController.getUser)
-router.post('/register', userController.postUser)
+router.post('/adduser', userController.postUser)
 router.put('/edituser/:id', userController.putUser)
 router.delete('/deleteuser/:id', userController.deleteUser)
 
